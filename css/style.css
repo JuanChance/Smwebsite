@@ -1,0 +1,438 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(255,155,4);
+    background: linear-gradient(0deg, rgba(255,155,4,1) 0%, rgba(241,255,0,1) 85%);
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+/*------------------------header----------------------------------------*/
+header{
+    width: 75%;
+    margin: auto;
+    font-size: 70px;
+    text-align: center;
+}
+
+#top{
+    background: rgb(241,255,0);
+    background: radial-gradient(circle, rgba(241,255,0,1) 0%, rgba(242,190,0,1) 100%);
+    font-family: monospace;
+}
+
+/*--------------------------NAV--------------------------------------------*/
+#nav{
+    width: 75%;
+    margin: auto;
+}
+
+.navlink{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #E5D352;
+}
+
+.navlink:hover{
+    background-color: yellow;
+}
+
+li{
+    float: left;
+    border: 1px solid #000;
+    list-style: none;
+}
+
+/* dropdown styling */
+
+#main li{
+    text-align: center;
+    width: 24.82%; /*Percentage seems to be very precise*/
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropnav{
+    list-style: none;
+    left: -2px;
+    position: absolute;
+    display: none;
+
+}
+
+.dropnav li{
+    min-width: 430%;
+    float: none;
+}
+
+.dropdown:hover > .dropnav{
+    display: block;
+}
+
+/*-----------------------------------------------------------------------------------------SM NAV------------------------------------------------------------------------------------------------------------*/
+#smnav{
+    position: fixed;
+    left: 7.1%;
+}
+
+.smnav{
+    text-align: right;
+    background-color: #CFDBD5;
+    color: #000;
+}
+
+.smlist{
+    float: none;
+    clear: both;
+    border: 2px solid #000;
+    background-color: #CFDBD5;
+}
+
+/*--------------------------------------------footer-----------------------------------*/
+footer{
+    width: 75%;
+    margin: 0 auto;
+}
+
+#feet{
+    font-size: 10px;
+}
+
+/*-------------------------------------------index----------------------------------------------------*/
+section{
+    width: 75%;
+    margin: 0 auto;
+}
+
+#headimg{
+    width: 100%;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#welcmsg{
+    font-size: 25px;
+}
+
+/*--------------------------------------------------------------SM PAGES-------------------------------------------------------------*/
+.cont{
+    width: 75%;
+    background-color: #E5D352;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr 50px;
+    grid-template-rows: repeat(5, 300px);
+    grid-column-gap: 5px;
+    grid-template-areas: 
+        "icon1 des1 sidebar"
+        "icon2 des2 sidebar"
+        "icon3 des3 sidebar"
+        "icon4 des4 sidebar"
+        "icon5 des5 sidebar"
+}
+.dicon{
+    padding: 0;
+    background-color: #fff;
+    border-radius: 10%;
+}
+
+#tbmlri{
+    grid-area: icon1;
+}
+
+#tmblrd{
+    grid-area: des1;
+}
+
+#instai{
+    grid-area: icon2;
+}
+
+#instad{
+    grid-area: des2;
+}
+
+#youi{
+    grid-area: icon3;
+}
+
+#youd{
+    grid-area: des3;
+}
+
+#twtri{
+    grid-area: icon4;
+}
+
+#twtrd{
+    grid-area: des4;
+}
+
+#fcbi{
+    grid-area: icon5;
+}
+
+#fcbd{
+    grid-area: des5;
+}
+
+.icon{
+    margin: 20px 10px 20px 20px;
+    width: 250px;
+}
+
+.tmblrdes, .instades, .smdes, .twtdes{
+    font-family: sans-serif;
+    font-size: 50px;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+.smdes{
+    background-color: #CFDBD5;
+}
+
+.tmblrdes{
+    background-color: #34526f;
+}
+
+.instades{
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.twtdes{
+    background-color: #2bc4ff;
+}
+
+
+/*--------------------------------------------------------FORM STYLING-------------------------------------------------------------*/
+
+form{
+    position: relative;
+    top: 30px;
+    margin: auto;
+    width: 50%;
+}
+
+fieldset{
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #E5D352;
+}
+
+#sugtext{
+    text-align: center;
+}
+
+legend{
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px 2px;
+    background-color: #CFDBD5;
+}
+
+/*Personal Details*/
+.pd{
+    margin: 2px 0;
+}
+
+.pd input{
+    position: absolute;
+    left: 120px;
+}
+
+#student, #prof, #other{
+    position: absolute;
+    left: 80px;
+}
+
+/*Social Media*/
+.left, .right{
+    width: 50%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+/*Suggestions*/
+textarea{
+    border-radius: 3px;
+    padding: 3px;
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*Buttons*/
+#buttons{
+    text-align: center;
+}
+
+button{
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #88958D;
+}
+
+button:hover{
+    background-color: #E5D352;
+}
+
+/*--------------------------------------------------------------SOCIAL MEDIA-------------------------------------------------------*/
+.smheader{
+    background-color: transparent;
+}
+
+.smheaderimg{
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+h2{
+    color: #fff;
+}
+/*----------------------------------------------------------------TUMBLR--------------------------------------------------------------------------------*/
+#tumblrpage{
+    background-color: #34526f;
+}
+
+#tumblrinfo{
+    padding: 0 30px;
+    color: #fff;
+}
+
+.tumblr1{
+    height: 500px;
+}
+
+.tumblr2{
+    height: 400px
+}
+
+h4{
+    color: #00b9fb;
+}
+
+/*----------------------------------------------------------FACEBOOK-----------------------------------------------------------*/
+#fbpage{
+    background-color: #fff;
+}
+
+#fbinfo{
+    padding: 0 30px;
+    color: #000;
+}
+
+.h2fb, .usefb{
+    color: #3b5998;
+}
+
+.h4fb{
+    color: #8b9dc3;
+}
+
+/*----------------------------------------------------------INSTAGRAM-----------------------------------------------------------*/
+#instapage{
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+#instabgc{
+    background-color: #fff;
+    width: 300px;
+    margin: auto;
+    border-radius: 40%;
+}
+
+#instainfo{
+    padding: 0 30px;
+    color: #000;
+}
+
+.h2insta{
+    color: #fff;
+}
+
+.h4insta{
+    color: #f2003c;
+}
+
+/*----------------------------------------------------------TWITTER-----------------------------------------------------------*/
+#twtrpage{
+    background-color: #2bc4ff;
+}
+
+#twtrinfo{
+    padding: 0 30px;
+    color: #000;
+}
+
+.h2twtr{
+    color: #fff;
+}
+
+.h4twtr{
+    color: #fff;
+}
+
+/*----------------------------------------------------------YOUTUBE-----------------------------------------------------------*/
+#ytpage{
+    background-color: #fff;
+}
+
+#ytinfo{
+    padding: 0 30px;
+    color: #787878;
+}
+
+.h2yt, .useyt{
+    color: #ff0000;
+}
+
+.h4yt{
+    color: #000;
+}
+
+/*------------------------------------------------------RESOURCES-------------------------------------------------------------------------------------*/
+table{
+    width: 75%;
+    margin: auto;
+}
+
+table, th, td{
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+
+th{
+    height: 50px;
+    background-color: #CFDBD5;
+}
+
+td{
+    padding: 5px;
+    background-color: #E5D352;
+}
