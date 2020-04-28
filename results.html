@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <Title>Thank you for your submission!</Title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    
+    <body>
+    
+    <div>
+        <h1>THANK YOU FOR YOUR FEEDBACK</h1>
+        <p>We greatly appreciate your participation and feeedback. These submissions will help up immensely in understanding the practicality of Social Media as an academic tool.</p>
+        <br>
+        <h3>Your submission</h3>
+        
+        <div id="userdata"></div>
+        <br>
+        <hr>
+        <p><a href="form.html">Back to Submissions Form</a></p>
+    </div>
+    
+    <script>
+        const dataList = document.getElementById("userdata")
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            dataList.append(`${name}: ${value}`)
+            dataList.append(document.createElement('br'))
+        })  
+    
+    </script>
+    
+    </body>
+</html>

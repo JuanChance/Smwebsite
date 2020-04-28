@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <Title>Form</Title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    
+    <body>
+        <header id="top">Social Media for Academic Use</header>
+        
+        <!--nav-->
+        <div id="nav">
+        <ul id="main">
+            <li><a class="navlink" href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a class="navlink" href="smpages.html">Social Media Tools</a>
+                <ul class="dropnav">
+                    <li><a class="navlink" href="tumblr.html">Tumblr</a></li>
+                    <li><a class="navlink" href="instagram.html">Instagram</a></li>
+                    <li><a class="navlink" href="facebook.html">Facebook</a></li>
+                    <li><a class="navlink" href="twitter.html">Twitter</a></li>
+                    <li><a class="navlink" href="youtube.html">Youtube</a></li>
+                </ul>
+            </li>
+            <li><a class="navlink" href="form.html">Contact</a></li>
+            <li><a class="navlink" href="resources.html">Resources</a></li>
+        </ul>
+        </div>
+        <!--nav-end-->
+        
+        <form action="results.html" method="get">
+           
+           <fieldset>
+               <legend>Personal Details</legend>
+               
+               <div class="pd">
+                   <label for="fname">First name: </label>
+                   <input type="text" name="fname" id="fname" placeholder="Required" required>
+               </div>
+               
+               <div class="pd">
+                   <label for="lname">Last name: </label>
+                   <input type="text" name="lname" id="lname" placeholder="Required" required>
+               </div>
+                  
+               <hr>
+               <p>Are you a...</p>
+                              
+               <div class="pd">
+                   <input type="radio" name="stuprof" id="student" value="student">
+                   <label for="student">Student</label>    
+               </div>
+               
+               <div class="pd">
+                   <input type="radio" name="stuprof" id="prof" value="prof">
+                   <label for="prof">Lecturer</label>
+               </div>
+               
+               <div class="pd">
+                   <input type="radio" name="stuprof" id="other" value="other">
+                   <label for="other">Other</label>
+               </div>
+               
+               
+               <div class="pd">
+                   <label for="stdntnum">Student number: </label>
+                   <input type="tel" name="stdntnum" id="stdntnum" placeholder="If applicable">
+               </div>
+               <hr>
+               
+               <div class="pd">
+                   <label for="email">Email: </label>
+                   <input type="email" name="email" id="email" placeholder="Required" required>
+               </div>
+               
+               <div class="pd">
+                   <label for="address">Address: </label>
+                   <input type="text" name="address" id="address">
+               </div>
+               
+               <div class="pd">
+                   <label for="tel">Telephone: </label>
+                   <input type="tel" name="tel" id="tel">
+               </div>
+               
+           </fieldset>
+           
+           <fieldset>
+               <legend>Social Media</legend>
+               
+               <p>Which Social Media platforms do you use?</p>
+               
+               <div class="left">
+                   <div>
+                       <input type="checkbox" name="tumblr" id="tumblr">
+                       <label for="tumblr">Tumblr</label> 
+                   </div>
+
+                   <div>
+                       <input type="checkbox" name="twitter" id="twitter">
+                       <label for="twitter">Twitter</label> 
+                   </div>
+
+                   <div>
+                       <input type="checkbox" name="instagram" id="instagram">
+                       <label for="instagram">Instagram</label> 
+                   </div>
+               </div>
+               
+               <div class="right">
+                   <div>
+                       <input type="checkbox" name="youtube" id="youtube">
+                       <label for="youtube">Youtube</label> 
+                   </div>
+
+                   <div>
+                       <input type="checkbox" name="facebook" id="facebook">
+                       <label for="facebook">Tumblr</label> 
+                   </div>
+
+                   <div>
+                       <input type="checkbox" name="othersm" id="othersm">
+                       <label for="othersm">Other</label> 
+                   </div>
+               </div>
+               
+               <div>
+                   <label for="otherinput">Please Specify Social Media tools: </label>
+                   <input type="text" name="otherinput" id="otherinput" placeholder="MySpace, Google+, etc...">
+               </div>
+               <br>
+               <p>Roughly how long do you spend on Social Media daily?</p>
+               
+               <div>
+                   <label for="time">Usage time: </label>
+                   <select name="time" id="time">
+                       <option value="1">1-2 hours</option>
+                       <option value="3">3-4 hours</option>
+                       <option value="5">5-6 hours</option>
+                       <option value="6">6+ hours</option>
+                   </select>
+               </div>
+               
+           </fieldset>
+           
+           <fieldset id="sugtext">
+               <legend>Suggestions</legend>
+               
+               <textarea name="suggestion" id="suggestion"></textarea>
+           </fieldset>
+           
+           <fieldset id="buttons">
+                <button type="submit">Submit form</button>
+                <button type="reset">Reset from</button>
+           </fieldset>
+           
+        
+        </form>
+        
+        <footer>
+            <hr>
+            <p id="feet">Insert Text Here <a href="sitemap.html">Site Map</a></p>
+        </footer>
+    </body>
+</html>
